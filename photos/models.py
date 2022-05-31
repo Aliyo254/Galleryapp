@@ -29,7 +29,7 @@ class Location(models.Model):
         self.delete()
 
 class Image(models.Model):
-    image = models.ImageField(blank=False)
+    image = models.ImageField(upload_to='images/',null=True)
     name = models.CharField(max_length=60)
     description = models.TextField()
     author = models.CharField(max_length=40, default='admin')
@@ -39,7 +39,7 @@ class Image(models.Model):
 
 
     def __str__(self):
-        return self.image
+        return self.name
 
     def save_image(self):
         self.save()
