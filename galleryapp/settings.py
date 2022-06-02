@@ -72,7 +72,7 @@ DATABASES = {
         'USER': 'gstnycazdkywvv',
         'PASSWORD':'02c87710af5e9b67a83a8bcdff9de8c872af33d85fdfa1dc3b04433195e5769b',
         'PORT':'5432',
-        'HOST':'ec2-54-227-248-71.compute-1.amazonaws.com'
+        'HOST':'ec2-54-227-248-71.compute-1.amazonaws.com',
         
     }
 }
