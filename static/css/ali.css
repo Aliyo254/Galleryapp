@@ -1,0 +1,48 @@
+h2 {
+    color:white;
+    margin-top:5%;
+    font-size:35px;
+    font-family: 'Sans-serif';
+    }
+    
+    body{
+    background-image:url(/static/images/bg.jpg);
+    background-attachment:fixed;
+    }
+    
+    .modalcard{
+    background-color:rgba(10,10,10,0.9);
+    color:white;
+    padding:3%;
+    border:none;
+    }
+    h3{
+    color:white;
+    font-family: 'Sans-serif';
+    }
+    hr{
+    background:white;
+    height:2px;
+    }
+    #imageheader{
+    font-family: 'Yeseva One', cursive;
+    }
+    
+    .imgdesc{
+    font-family: 'Vollkorn', serif;
+    }
+    #foundnon{
+    
+    }
+    #found{
+    margin-bottom:3%;
+    }
+    #btn{
+    margin-right:6px;
+    }
+    .cat{
+    float:center;
+    background:gray;
+    padding:4px;
+    border-radius:6px;
+    }
