@@ -19,6 +19,11 @@ class Category(models.Model):
 class Location(models.Model):
     name = models.CharField(max_length=60)
 
+    @classmethod
+    def get_locations(cls):
+        locations = Location.objects.all()
+        return locations
+
     def __str__(self):
         return self.name
 
@@ -38,9 +43,19 @@ class Image(models.Model):
     location = models.ForeignKey(Location,on_delete=models.CASCADE)
 
     @classmethod
-    def search_by_category(cls, search_term):
-        images = cls.objects.filter(category__name__icontains=search_term)
+    def filter_by_location(cls, location):
+        image_location = Image.objects.filter(location__name=location)
+        return image_location
+
+    @classmethod
+    def get_image_by_id(cls, id):
+        image = cls.Image.filter(id=id)
+        return image
+    @classmethod
+    def search_by_category(cls, category):
+        images = cls.objects.filter(category__name__icontains=category)
         return images
+        
     def __str__(self):
         return self.name
 
@@ -49,3 +64,6 @@ class Image(models.Model):
 
     def delete_image(self):
         self.delete()
+
+    class Meta:
+        ordering = ['date']
