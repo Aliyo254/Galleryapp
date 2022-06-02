@@ -68,9 +68,11 @@ WSGI_APPLICATION = 'galleryapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'gallery',
-        'USER': 'alinur',
-        'PASSWORD':'admin',
+        'NAME': 'deabqepa2epo9t',
+        'USER': 'gstnycazdkywvv',
+        'PASSWORD':'02c87710af5e9b67a83a8bcdff9de8c872af33d85fdfa1dc3b04433195e5769b',
+        'PORT':'5432',
+        'HOST':'ec2-54-227-248-71.compute-1.amazonaws.com'
         
     }
 }
